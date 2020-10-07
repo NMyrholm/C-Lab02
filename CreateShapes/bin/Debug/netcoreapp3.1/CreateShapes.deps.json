@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "CreateShapes/1.0.0": {
+        "dependencies": {
+          "Lab02": "1.0.0",
+          "ShapeLibrary": "1.0.0"
+        },
+        "runtime": {
+          "CreateShapes.dll": {}
+        }
+      },
+      "Lab02/1.0.0": {
+        "dependencies": {
+          "ShapeLibrary": "1.0.0"
+        },
+        "runtime": {
+          "Lab02.dll": {}
+        }
+      },
+      "ShapeLibrary/1.0.0": {
+        "runtime": {
+          "ShapeLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CreateShapes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lab02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShapeLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

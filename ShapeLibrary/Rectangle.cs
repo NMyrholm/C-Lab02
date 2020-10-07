@@ -7,8 +7,8 @@ namespace ShapeLibrary
         public override Vector3 Center { get; }
         public override float Area { get; }
         public override float Circumference { get; }
-        public double VectorX { get; }
-        public double VectorY { get; }
+        public float VectorX { get; }
+        public float VectorY { get; }
         public float Width { get; }
         public float Height { get; }
         public bool IsSquare { get; }
@@ -33,7 +33,7 @@ namespace ShapeLibrary
             Height = width;
             Width = width;
 
-            Area *= width;
+            Area = width * width;
             Circumference = width * 4;
             Center = new Vector3(center.X, center.Y, 0f);
             IsSquare = true;
@@ -41,7 +41,10 @@ namespace ShapeLibrary
 
         public override string ToString()
         {
-            return $"rectangle @({ToDecimal(VectorX)}, {ToDecimal(VectorY)}): w = {ToDecimal(Width)}, h = {ToDecimal(Height)}";
+            string form = "rectangle";
+            if (IsSquare) form = "square";
+            return $"{form} @({ToDecimal(VectorX)}, {ToDecimal(VectorY)}): w = {ToDecimal(Width)}, h = {ToDecimal(Height)}";
         }
+
     }
 }
